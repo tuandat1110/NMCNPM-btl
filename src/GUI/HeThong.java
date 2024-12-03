@@ -91,7 +91,6 @@ public class HeThong extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        txtDescription = new javax.swing.JTextField();
         txtTotalPrice = new javax.swing.JTextField();
         btnAdd = new javax.swing.JButton();
         btnUpdate = new javax.swing.JButton();
@@ -103,6 +102,9 @@ public class HeThong extends javax.swing.JFrame {
         jLablePrice = new javax.swing.JLabel();
         txtQuantity = new javax.swing.JTextField();
         txtPrice = new javax.swing.JTextField();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        txtDescription = new javax.swing.JTextArea();
+        jScrollPane6 = new javax.swing.JScrollPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -601,11 +603,6 @@ public class HeThong extends javax.swing.JFrame {
 
         jLabel21.setText("Total Price");
 
-        txtDescription.setAutoscrolls(false);
-        txtDescription.setMaximumSize(new java.awt.Dimension(387, 2147483647));
-        txtDescription.setMinimumSize(new java.awt.Dimension(387, 2147483647));
-        txtDescription.setPreferredSize(new java.awt.Dimension(387, 22));
-
         txtTotalPrice.setAutoscrolls(false);
         txtTotalPrice.setMaximumSize(new java.awt.Dimension(387, 2147483647));
         txtTotalPrice.setMinimumSize(new java.awt.Dimension(387, 2147483647));
@@ -690,6 +687,13 @@ public class HeThong extends javax.swing.JFrame {
         txtPrice.setMinimumSize(new java.awt.Dimension(387, 2147483647));
         txtPrice.setPreferredSize(new java.awt.Dimension(387, 22));
 
+        txtDescription.setColumns(20);
+        txtDescription.setRows(5);
+        txtDescription.setMaximumSize(new java.awt.Dimension(232, 84));
+        txtDescription.setMinimumSize(new java.awt.Dimension(232, 84));
+        txtDescription.setPreferredSize(new java.awt.Dimension(300, 84));
+        jScrollPane5.setViewportView(txtDescription);
+
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
@@ -712,7 +716,7 @@ public class HeThong extends javax.swing.JFrame {
                             .addComponent(cmbServices, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtCustomerId, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtTotalPrice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(txtDescription, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.LEADING)))
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGap(5, 5, 5)
                         .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -735,11 +739,11 @@ public class HeThong extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cmbServices, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(desciption, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtDescription, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLablePrice)
                     .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -751,7 +755,7 @@ public class HeThong extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel21)
                     .addComponent(txtTotalPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnClear)
                     .addComponent(btnAdd)
@@ -777,8 +781,8 @@ public class HeThong extends javax.swing.JFrame {
                 .addGap(58, 58, 58)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 465, Short.MAX_VALUE))
-                .addContainerGap(492, Short.MAX_VALUE))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 467, Short.MAX_VALUE))
+                .addContainerGap(490, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Đặt dịch vụ", jPanel4);
@@ -1459,11 +1463,13 @@ public class HeThong extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable serviceTable;
     private javax.swing.JTextField txtCustomerId;
-    private javax.swing.JTextField txtDescription;
+    private javax.swing.JTextArea txtDescription;
     private javax.swing.JTextField txtPrice;
     private javax.swing.JTextField txtQuantity;
     private javax.swing.JTextField txtTotalPrice;
