@@ -14,6 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.SwingWorker;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
@@ -45,12 +46,6 @@ public class HeThong extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel5 = new javax.swing.JPanel();
-        jPanel6 = new javax.swing.JPanel();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
@@ -103,6 +98,40 @@ public class HeThong extends javax.swing.JFrame {
         jLablePrice = new javax.swing.JLabel();
         txtQuantity = new javax.swing.JTextField();
         txtPrice = new javax.swing.JTextField();
+        jPanel6 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        txtID = new javax.swing.JTextField();
+        txtName = new javax.swing.JTextField();
+        txtPosition = new javax.swing.JTextField();
+        txtSalary = new javax.swing.JTextField();
+        txtBirthday = new javax.swing.JTextField();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        staffTable = new javax.swing.JTable();
+        btnadd = new javax.swing.JButton();
+        btnclear = new javax.swing.JButton();
+        btndelete = new javax.swing.JButton();
+        btnedit = new javax.swing.JButton();
+        jLabel29 = new javax.swing.JLabel();
+        txtGender = new javax.swing.JTextField();
+        jLabel30 = new javax.swing.JLabel();
+        txtAddress = new javax.swing.JTextField();
+        jLabel31 = new javax.swing.JLabel();
+        txtBonus = new javax.swing.JTextField();
+        jLabel32 = new javax.swing.JLabel();
+        txtShift = new javax.swing.JTextField();
+        jLabel33 = new javax.swing.JLabel();
+        txtHire = new javax.swing.JTextField();
+        jLabel34 = new javax.swing.JLabel();
+        txtContact = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -152,121 +181,6 @@ public class HeThong extends javax.swing.JFrame {
                 jTabbedPane1MouseClicked(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1603, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1015, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("Nhân viên", jPanel5);
-
-        jPanel6.setBackground(new java.awt.Color(0, 153, 153));
-
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
-            },
-            new String [] {
-                "ID", "ID Name", "Category", "Quantity", "Price", "Time Added", "Expiration Date"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-        });
-        jScrollPane3.setViewportView(jTable1);
-
-        jLabel22.setBackground(new java.awt.Color(0, 153, 153));
-        jLabel22.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
-        jLabel22.setText("Add Service");
-        jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel22MouseClicked(evt);
-            }
-        });
-
-        jLabel23.setFont(new java.awt.Font("Yu Gothic UI", 1, 18)); // NOI18N
-        jLabel23.setText("Update Service");
-        jLabel23.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel23MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel23)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 1355, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane3)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(211, 211, 211)
-                .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(198, 198, 198)
-                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(514, Short.MAX_VALUE))
-        );
-
-        jTabbedPane1.addTab("Kho", jPanel6);
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -589,6 +503,14 @@ public class HeThong extends javax.swing.JFrame {
                 "Customer ID", "Service Name", "Quantity", "Total Price"
             }
         ));
+        serviceTable.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                serviceTableMouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                serviceTableMouseExited(evt);
+            }
+        });
         jScrollPane1.setViewportView(serviceTable);
 
         jScrollPane2.setViewportView(jScrollPane1);
@@ -782,6 +704,394 @@ public class HeThong extends javax.swing.JFrame {
         );
 
         jTabbedPane1.addTab("Đặt dịch vụ", jPanel4);
+
+        jPanel6.setBackground(new java.awt.Color(0, 153, 153));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "ID", "ID Name", "Category", "Quantity", "Price", "Time Added", "Expiration Date"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable1MouseClicked(evt);
+            }
+        });
+        jScrollPane3.setViewportView(jTable1);
+
+        jLabel22.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel22.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 18)); // NOI18N
+        jLabel22.setText("Add Service");
+        jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel22MouseClicked(evt);
+            }
+        });
+
+        jLabel23.setFont(new java.awt.Font("Yu Gothic UI", 1, 18)); // NOI18N
+        jLabel23.setText("Update Service");
+        jLabel23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel23MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel23)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 1355, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(211, 211, 211)
+                .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(198, 198, 198)
+                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(514, Short.MAX_VALUE))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3)
+                .addContainerGap())
+        );
+
+        jTabbedPane1.addTab("Kho", jPanel6);
+
+        jLabel24.setBackground(new java.awt.Color(204, 255, 255));
+        jLabel24.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel24.setText("Employee ID:");
+
+        jLabel25.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel25.setText("Employee Gender:");
+
+        jLabel26.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel26.setText("Employee Position:");
+
+        jLabel27.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel27.setText("Employee Birthday:");
+
+        jLabel28.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel28.setText("Employee Name:");
+
+        txtID.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
+        txtName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
+        txtPosition.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
+        txtSalary.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtSalary.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtSalaryActionPerformed(evt);
+            }
+        });
+
+        txtBirthday.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
+        staffTable.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        staffTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "ID", "Name", "Gender", "Birthday", "Address", "Position", "Salary", "Shift", "Hire_Date", "Contact_Info"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        staffTable.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                staffTableMouseClicked(evt);
+            }
+        });
+        jScrollPane4.setViewportView(staffTable);
+
+        btnadd.setBackground(new java.awt.Color(204, 204, 204));
+        btnadd.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnadd.setText("ADD");
+        btnadd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnaddActionPerformed(evt);
+            }
+        });
+
+        btnclear.setBackground(new java.awt.Color(204, 204, 204));
+        btnclear.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnclear.setText("CLEAR");
+        btnclear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnclearActionPerformed(evt);
+            }
+        });
+
+        btndelete.setBackground(new java.awt.Color(204, 204, 204));
+        btndelete.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btndelete.setText("DELETE");
+        btndelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btndeleteActionPerformed(evt);
+            }
+        });
+
+        btnedit.setBackground(new java.awt.Color(204, 204, 204));
+        btnedit.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnedit.setText("EDIT");
+        btnedit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btneditActionPerformed(evt);
+            }
+        });
+
+        jLabel29.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel29.setText("Employee Salary:");
+
+        txtGender.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
+        jLabel30.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel30.setText("Employee Address:");
+
+        txtAddress.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
+        jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel31.setText("Shift:");
+
+        txtBonus.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtBonus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtBonusActionPerformed(evt);
+            }
+        });
+
+        jLabel32.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel32.setText("Bonus:");
+
+        txtShift.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtShift.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtShiftActionPerformed(evt);
+            }
+        });
+
+        jLabel33.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel33.setText("Hire_Date:");
+
+        txtHire.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtHire.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtHireActionPerformed(evt);
+            }
+        });
+
+        jLabel34.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel34.setText("Contact_Info:");
+
+        txtContact.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        txtContact.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtContactActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel32, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel33, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(txtID, javax.swing.GroupLayout.DEFAULT_SIZE, 284, Short.MAX_VALUE)
+                                .addComponent(txtName)
+                                .addComponent(txtPosition)
+                                .addComponent(txtSalary)
+                                .addComponent(txtBirthday)
+                                .addComponent(txtGender)
+                                .addComponent(txtAddress)
+                                .addComponent(txtBonus)
+                                .addComponent(txtHire)
+                                .addComponent(txtContact))
+                            .addComponent(txtShift, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(117, 117, 117)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 801, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(btnadd, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnedit, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btndelete, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnclear, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(236, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtGender, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtBirthday, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtPosition, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtSalary, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                            .addComponent(txtBonus))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtShift, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtHire, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(9, 9, 9)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtContact, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(11, 11, 11)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnadd, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnedit, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btndelete, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnclear, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(466, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Nhân viên", jPanel5);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -1277,6 +1587,300 @@ public class HeThong extends javax.swing.JFrame {
         updateserviceFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); 
         updateserviceFrame.setVisible(true);
     }//GEN-LAST:event_jLabel23MouseClicked
+
+    private void btnaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaddActionPerformed
+        String username = "root";
+    String password = "";
+    java.sql.Connection conn = null;
+
+    // Lấy dữ liệu từ các ô text
+    String employeeId = txtID.getText();
+    String name = txtName.getText();
+    String gender = txtGender.getText();
+    String birthday = txtBirthday.getText();
+    String address = txtAddress.getText();
+    String position = txtPosition.getText();
+    String salary = txtSalary.getText();
+    String bonus = txtBonus.getText();
+    String shift = txtShift.getText();
+    String hireDate = txtHire.getText();
+    String contactInfo = txtContact.getText();
+
+    // Validate rằng các trường không được bỏ trống
+    if (employeeId.isEmpty() || name.isEmpty() || gender.isEmpty() || birthday.isEmpty() || address.isEmpty() ||
+        position.isEmpty() || salary.isEmpty() || bonus.isEmpty() || shift.isEmpty() || hireDate.isEmpty() || contactInfo.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Please fill all fields.");
+        return;
+    }
+
+    try {
+        // Kết nối tới cơ sở dữ liệu
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/nmcnpm_btl", username, password);
+
+        // Chuẩn bị câu truy vấn INSERT
+        String query = "INSERT INTO staff (employee_id, name_staff, gender, birthday, address, position, salary, bonus, shift, hired_date, contact_info) " +
+                       "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        PreparedStatement stmt = conn.prepareStatement(query);
+        stmt.setInt(1, Integer.parseInt(employeeId));     // ID
+        stmt.setString(2, name);                          // Name
+        stmt.setString(3, gender);                        // Gender
+        stmt.setString(4, birthday);                     // Birthday
+        stmt.setString(5, address);                      // Address
+        stmt.setString(6, position);                     // Position
+        stmt.setDouble(7, Double.parseDouble(salary));   // Salary
+        stmt.setDouble(8, Double.parseDouble(bonus));    // Bonus
+        stmt.setString(9, shift);                        // Shift
+        stmt.setString(10, hireDate);                    // Hire Date
+        stmt.setString(11, contactInfo);                 // Contact Info
+
+        // Thực thi truy vấn
+        int row = stmt.executeUpdate();
+
+        // Hiển thị thông báo thành công hoặc thất bại
+        if (row > 0) {
+            JOptionPane.showMessageDialog(this, "Employee Added!!!");
+            loadEmployeeTableData(); // Refresh lại bảng sau khi thêm dữ liệu
+        } else {
+            JOptionPane.showMessageDialog(this, "No employee was added. Please try again.");
+        }
+
+        // Xóa dữ liệu trong các ô text sau khi thêm thành công
+        txtID.setText("");
+        txtName.setText("");
+        txtGender.setText("");
+        txtBirthday.setText("");
+        txtAddress.setText("");
+        txtPosition.setText("");
+        txtSalary.setText("");
+        txtBonus.setText("");
+        txtShift.setText("");
+        txtHire.setText("");
+        txtContact.setText("");
+
+    } catch (SQLException e) {
+        e.printStackTrace();
+        JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
+    } finally {
+        // Đóng kết nối
+        if (conn != null) {
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    }//GEN-LAST:event_btnaddActionPerformed
+
+    private void btneditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditActionPerformed
+        // TODO add your handling code here:
+        // TODO add your handling code here:
+    String username = "root";
+    String password = "";
+    java.sql.Connection conn = null;
+
+    // Lấy thông tin từ các trường nhập liệu
+    String employeeId = txtID.getText();
+    String name = txtName.getText();
+    String gender = txtGender.getText();
+    String birthday = txtBirthday.getText();
+    String address = txtAddress.getText();
+    String position = txtPosition.getText();
+    String salary = txtSalary.getText();
+    String bonus = txtBonus.getText();
+    String shift = txtShift.getText();
+    String hireDate = txtHire.getText();
+    String contactInfo = txtContact.getText();
+
+    // Validate rằng các trường không được bỏ trống
+    if (employeeId.isEmpty() || name.isEmpty() || gender.isEmpty() || birthday.isEmpty() || address.isEmpty() ||
+        position.isEmpty() || salary.isEmpty() || bonus.isEmpty() || shift.isEmpty() || hireDate.isEmpty() || contactInfo.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Please fill all fields.");
+        return;
+    }
+
+    try {
+        // Kết nối tới cơ sở dữ liệu
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/nmcnpm_btl", username, password);
+
+        // Câu lệnh SQL để cập nhật thông tin nhân viên
+        String query = "UPDATE staff SET name_staff=?, gender=?, birthday=?, address=?, position=?, salary=?, " +
+                       "bonus=?, shift=?, hired_date=?, contact_info=? WHERE employee_id=?";
+        PreparedStatement stmt = conn.prepareStatement(query);
+
+        // Đặt giá trị vào câu lệnh PreparedStatement
+        stmt.setString(1, name);                           // Name
+        stmt.setString(2, gender);                         // Gender
+        stmt.setString(3, birthday);                       // Birthday
+        stmt.setString(4, address);                        // Address
+        stmt.setString(5, position);                       // Position
+        stmt.setDouble(6, Double.parseDouble(salary));      // Salary
+        stmt.setDouble(7, Double.parseDouble(bonus));       // Bonus
+        stmt.setString(8, shift);                          // Shift
+        stmt.setString(9, hireDate);                       // Hire Date
+        stmt.setString(10, contactInfo);                   // Contact Info
+        stmt.setInt(11, Integer.parseInt(employeeId));      // Employee ID
+
+        // Thực thi câu lệnh cập nhật
+        int rowsAffected = stmt.executeUpdate();
+        if (rowsAffected > 0) {
+            JOptionPane.showMessageDialog(this, "Thông tin nhân viên đã được cập nhật thành công.");
+        } else {
+            JOptionPane.showMessageDialog(this, "Không tìm thấy nhân viên với ID đã nhập.");
+        }
+
+        // Làm mới dữ liệu trong bảng (nếu cần thiết)
+        loadEmployeeTableData(); // Phương thức giả định để load lại dữ liệu bảng
+
+        // Xóa dữ liệu trong các ô text sau khi cập nhật
+        txtID.setText("");
+        txtName.setText("");
+        txtGender.setText("");
+        txtBirthday.setText("");
+        txtAddress.setText("");
+        txtPosition.setText("");
+        txtSalary.setText("");
+        txtBonus.setText("");
+        txtShift.setText("");
+        txtHire.setText("");
+        txtContact.setText("");
+
+    } catch (SQLException e) {
+        e.printStackTrace();
+        JOptionPane.showMessageDialog(this, "Lỗi: " + e.getMessage());
+    } finally {
+        // Đảm bảo đóng kết nối
+        if (conn != null) {
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    }//GEN-LAST:event_btneditActionPerformed
+
+    private void btndeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndeleteActionPerformed
+        // TODO add your handling code here:
+        // TODO add your handling code here:
+    String username = "root";
+    String password = "";
+    java.sql.Connection conn = null;
+
+    // Lấy thông tin từ trường nhập liệu
+    String employeeId = txtID.getText();  // ID của nhân viên
+
+    // Kiểm tra ID có rỗng không
+    if (employeeId.isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Vui lòng nhập ID của nhân viên cần xóa.");
+        return;
+    }
+
+    try {
+        // Kết nối tới cơ sở dữ liệu
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/nmcnpm_btl", username, password);
+
+        // Câu lệnh SQL để xóa nhân viên dựa vào ID
+        String query = "DELETE FROM staff WHERE employee_id=?";
+        PreparedStatement stmt = conn.prepareStatement(query);
+
+        // Đặt giá trị của employeeId vào câu lệnh PreparedStatement
+        stmt.setInt(1, Integer.parseInt(employeeId));  // ID của nhân viên
+
+        // Thực thi câu lệnh xóa
+        int rowsAffected = stmt.executeUpdate();
+        if (rowsAffected > 0) {
+            JOptionPane.showMessageDialog(this, "Nhân viên đã được xóa thành công.");
+        } else {
+            JOptionPane.showMessageDialog(this, "Không tìm thấy nhân viên với ID đã nhập.");
+        }
+
+        // Làm mới dữ liệu trong bảng
+        loadEmployeeTableData(); // Phương thức giả định để tải lại dữ liệu bảng
+
+        // Làm sạch trường nhập liệu
+        txtID.setText("");
+        txtName.setText("");
+        txtGender.setText("");
+        txtBirthday.setText("");
+        txtAddress.setText("");
+        txtPosition.setText("");
+        txtSalary.setText("");
+        txtBonus.setText("");
+        txtShift.setText("");
+        txtHire.setText("");
+        txtContact.setText("");
+
+    } catch (SQLException e) {
+        e.printStackTrace();
+        JOptionPane.showMessageDialog(this, "Lỗi: " + e.getMessage());
+    } finally {
+        // Đảm bảo đóng kết nối
+        if (conn != null) {
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    }//GEN-LAST:event_btndeleteActionPerformed
+
+    private void btnclearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnclearActionPerformed
+        // TODO add your handling code here:
+        txtID.setText("");              // Làm sạch trường ID nhân viên
+    txtName.setText("");            // Làm sạch trường Tên nhân viên
+    txtGender.setText("");          // Làm sạch trường Giới tính
+    txtBirthday.setText("");        // Làm sạch trường Ngày sinh
+    txtAddress.setText("");         // Làm sạch trường Địa chỉ
+    txtPosition.setText("");        // Làm sạch trường Vị trí công việc
+    txtSalary.setText("");          // Làm sạch trường Lương
+    txtBonus.setText("");           // Làm sạch trường Thưởng
+    txtShift.setText("");           // Làm sạch trường Ca làm việc
+    txtHire.setText("");        // Làm sạch trường Ngày tuyển dụng
+    txtContact.setText("");     // Làm sạch trường Thông tin liên lạc
+
+    // Thông báo rằng các trường đã được làm sạch
+    JOptionPane.showMessageDialog(this, "Tất cả trường đã được làm sạch!");
+    }//GEN-LAST:event_btnclearActionPerformed
+
+    private void txtSalaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSalaryActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtSalaryActionPerformed
+
+    private void txtBonusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBonusActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtBonusActionPerformed
+
+    private void txtShiftActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtShiftActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtShiftActionPerformed
+
+    private void txtHireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHireActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtHireActionPerformed
+
+    private void txtContactActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContactActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtContactActionPerformed
+
+    private void serviceTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_serviceTableMouseClicked
+        // TODO add your handling code here:
+    
+    }//GEN-LAST:event_serviceTableMouseClicked
+
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTable1MouseClicked
+
+    private void staffTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_staffTableMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_staffTableMouseClicked
+
+    private void serviceTableMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_serviceTableMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_serviceTableMouseExited
     private double getServicePrice(String serviceName) {
         String username = "root";
         String password = "";
@@ -1367,6 +1971,46 @@ public class HeThong extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
         }
     }
+    
+    private void loadEmployeeTableData() {
+    String username = "root";
+    String password = "";
+    java.sql.Connection conn = null;
+    try {
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/nmcnpm_btl", username, password);
+        String query = "SELECT * FROM staff"; // Bảng Employee trong CSDL của bạn
+        PreparedStatement stmt = conn.prepareStatement(query);
+        ResultSet rs = stmt.executeQuery();
+        DefaultTableModel model = (DefaultTableModel) staffTable.getModel(); 
+        model.setRowCount(0); // Xóa các hàng hiện có trong bảng
+
+        while (rs.next()) {
+            model.addRow(new Object[]{
+                rs.getString("employee_id"),                  // Cột id
+                rs.getString("name_staff"),            // Cột name
+                rs.getString("gender"),          // Cột gender
+                rs.getString("birthday"),          // Cột birthday
+                rs.getString("address"),         // Cột address
+                rs.getString("position"),        // Cột position
+                rs.getString("salary"),          // Cột salary
+                rs.getString("bonus"),           // Cột bonus
+                rs.getString("shift"),           // Cột shift
+                rs.getString("hired_date"),         // Cột hire date
+                rs.getString("contact_info")     // Cột contact_info
+            });
+        }
+    } catch (SQLException e) {
+        JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
+    } finally {
+        try {
+            if (conn != null) {
+                conn.close(); // Đảm bảo đóng kết nối sau khi sử dụng
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(this, "Error closing connection: " + e.getMessage());
+        }
+    }
+}
 
     /**
      * @param args the command line arguments
@@ -1420,6 +2064,10 @@ public class HeThong extends javax.swing.JFrame {
     private javax.swing.JButton btnClear;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnUpdate;
+    private javax.swing.JButton btnadd;
+    private javax.swing.JButton btnclear;
+    private javax.swing.JButton btndelete;
+    private javax.swing.JButton btnedit;
     private javax.swing.JComboBox<String> cmbServices;
     private javax.swing.JLabel desciption;
     private javax.swing.JButton jButton1;
@@ -1439,7 +2087,18 @@ public class HeThong extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1459,17 +2118,54 @@ public class HeThong extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable serviceTable;
+    private javax.swing.JTable staffTable;
+    private javax.swing.JTextField txtAddress;
+    private javax.swing.JTextField txtBirthday;
+    private javax.swing.JTextField txtBonus;
+    private javax.swing.JTextField txtContact;
     private javax.swing.JTextField txtCustomerId;
     private javax.swing.JTextField txtDescription;
+    private javax.swing.JTextField txtGender;
+    private javax.swing.JTextField txtHire;
+    private javax.swing.JTextField txtID;
+    private javax.swing.JTextField txtName;
+    private javax.swing.JTextField txtPosition;
     private javax.swing.JTextField txtPrice;
     private javax.swing.JTextField txtQuantity;
+    private javax.swing.JTextField txtSalary;
+    private javax.swing.JTextField txtShift;
     private javax.swing.JTextField txtTotalPrice;
     // End of variables declaration//GEN-END:variables
 
     private PreparedStatement prepareStatement(String query1) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
+    
+
+    private static class Staff {
+
+        public Staff() {
+        }
+
+        private Staff(int id, String name, String gender, String position, double salary) {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+    }
+
+    private static class StaffList {
+
+        private static void add(Staff newStaff) {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+
+        public StaffList() {
+        }
+    }
+
+    
 }
